@@ -2,12 +2,8 @@ body{font-family:"Courier New", monospace;}
 
 h1, h2{color:darkmagenta}
 
-<<<<<<< HEAD
 .special, evenrow{background-color:thistle;}
-=======
-tr{background-color:lightpink ;}
->>>>>>> 845a8cffc613f07c1e14748c6b520e25016384ed
 
 h1{font-size: 8 em;}
 
-h2{font-size: 6 em;}
+h2{font-size: 6 em;} 
