@@ -2,7 +2,7 @@ body{font-family:"Courier New", monospace;}
 
 h1, h2{color:darkmagenta}
 
-.special, evenrow{background-color:thistle;}
+tr:nth-child(even){background-color:thistle;}
 
 h1{font-size: 8 em;}
 
