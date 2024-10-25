@@ -1,0 +1,50 @@
+body{
+        background-color: #cdb4db;
+        color: black;}
+
+a:hover {color: #Ffb8d1}
+
+h1 {color: #a2d2ff}
+
+nav {background-color: #E0e1e9 ;}
+
+nav a {color: #ff90b7}
+
+nav a:hover {background-color: #Ddfdfe ;}
+
+nav{
+    padding: 10px;
+    margin-bottom: 30px;}
+
+.copyright{float: left;}
+.tagline{float: right;}
+
+.catpic{height: 200px; width: 180px;}
+.catpic{float: center; margin-right: 10px;}
+.clear{clear: both;}
+.likelist{float: left;}
+
+.contactinfo{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    flex:1; order:1; 
+    background-color: #f6ecf4;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 black;}
+
+.forminfo{ 
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: center;
+    background-color: #f6ecf4;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 black;
+    box-sizing: border-box;}
+   
