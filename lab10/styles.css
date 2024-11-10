@@ -24,7 +24,6 @@ nav{
 .clear{clear: both;}
 .likelist{float: left;}
 
-.pic{max-width: 100%;}
 
 .contactinfo{
     display: flex;
@@ -50,9 +49,11 @@ nav{
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 black;
     box-sizing: border-box;}
 
-nav{display: block}
+.pic{max-width: 100%;}
+
    
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
     nav{size: 100%;
-        padding: 10px;}
+        padding: 10px;
+        display: block;}
     }
