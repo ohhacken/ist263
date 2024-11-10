@@ -41,7 +41,6 @@ nav{
 .forminfo{ 
     display: flex;
     flex-wrap: wrap; 
-    value: wrap;
     flex-direction: center;
     background-color: #f6ecf4;
     margin: 20px;
@@ -50,9 +49,10 @@ nav{
     border: 1px solid;
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 black;
     box-sizing: border-box;}
+
+nav{display: inline-block}
    
-@media screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     nav{size: 100%;
-        display: block;
-        padding: 5%;}
+        padding: 10px;}
     }
