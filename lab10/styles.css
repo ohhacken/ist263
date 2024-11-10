@@ -50,7 +50,7 @@ nav{
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 black;
     box-sizing: border-box;}
 
-nav{display: inline-block}
+nav{display: block}
    
 @media only screen and (max-width: 1000px) {
     nav{size: 100%;
