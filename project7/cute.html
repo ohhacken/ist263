@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Animals</title>
+    <style>
+        body {
+            font-family: cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #FADDE1;
+        }
+        nav {
+            background-color: #ffcad4;
+            padding: 10px;
+        }
+        nav a {
+            color: #590d22;
+            font-weight: bold;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #c9184a;
+        }
+        .container {
+            margin: 20px auto;
+            padding: 20px;
+            background: #F4ACB7;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .animal-card {
+            border: 1px solid #590d22;
+            margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            background: #FADDE1;
+            flex-wrap: wrap; 
+        }
+        .animal-info {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .animal-info h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .animal-info p {
+            margin: 10px 0;
+        }
+        .animal-info .rating {
+            font-size: 1.2rem;
+            color: #c9184a;
+            margin-bottom: 10px;
+        }
+        .animal-info .rating span {
+            font-size: 1.5rem;
+        }
+        .animal-image img {
+            width: 100%; 
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .sources {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #590d22;
+        }
+        .sources a {
+            display: block;
+            color: #590d22;
+            text-decoration: none;
+        }
+        .sources a:hover {
+            color: #c9184a;
+        }
+    
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 5px 0; ]
+            }
+            .animal-card {
+                flex-direction: column; 
+            }
+            .animal-info {
+                margin-right: 0;
+                margin-bottom: 20px; 
+            }
+            .animal-image img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="cute.html">Cute Animals</a>
+        <a href="scary.html">Scary Animals</a>
+    </nav>
+
+    <div class="container">
+        <div class="animal-card">
+            <div class="animal-info">
+                <h2>Dolphins</h2>
+                <div class="rating">
+                    <span>⭐⭐☆☆☆☆☆☆☆☆</span>
+                </div>
+                <p><strong>Facts:</strong></p>
+                <ol>
+                    <li>They’re marine mammals, so they aren’t fish</li>
+                    <li>They breathe through the blowhole on the top of their heads</li>
+                    <li>They can communicate by squeaking and whistling</li>
+                    <li>They’re mega predators and can eat over thirty-three pounds of fish a day</li>
+                    <li>They like to kill baby porpoises just for the sake of doing it</li>
+                    <li>Male dolphins will kill baby dolphins to mate with female dolphins</li>
+                    <li>They’ve been observed mating with dead things</li>
+                </ol>
+                <p><strong>My Opinions:</strong></p>
+                <p>
+                    While dolphins make cute sounds and their tricks can be adorable, they're big jerks.
+                    They should be recognized as the scary marine mammals they are.
+                </p>
+            </div>
+            <div class="animal-image">
+                <img src="dolphin.png" alt="Dolphin">
+                <a href="https://www.pexels.com/photo/cute-dolphine-underwater-64219/">picture source</a>
+            </div>
+        </div>
+        
+        <div class="animal-card">
+            <div class="animal-info">
+                <h2>Pandas</h2>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐⭐⭐⭐☆☆</span>
+                </div>
+                <p><strong>Facts:</strong></p>
+                <ol>
+                    <li>Their diet is 99% bamboo</li>
+                    <li>They can swim and climb trees</li>
+                    <li>They spend ten to sixteen hours a day eating</li>
+                    <li>They will occasionally do hand stands when they pee</li>
+                    <li>They poop, like, a lot</li>
+                    <li>They like to roll around</li>
+                    <li>They are not good at breeding</li>
+                </ol>
+                <p><strong>My Opinions:</strong></p>
+                <p>
+                    Pandas are adorable even if they're a bit odd. I love watching them roll around.
+                </p>
+            </div>
+            <div class="animal-image">
+                <img src="panda.png" alt="Panda">
+                <a href="https://www.pexels.com/photo/panda-1123765/">picture source</a>
+            </div>
+        </div>
+
+        <div class="sources">
+            <p>Sources:</p>
+            <a href="https://www.natgeokids.com/uk/discover/animals/sea-life/dolphins/">Dolphin Facts 1</a>
+            <a href="https://www.natureworldnews.com/articles/45427/20210312/10-dark-secrets-about-dolphins-youll-wish-you-didnt-get-to-know.htm">Dolphin Facts 2</a>
+            <a href="https://www.wwf.org.uk/learn/fascinating-facts/pandas">Panda Facts 1</a>
+            <a href="https://www.nathab.com/blog/weird-panda-behavior-explained/#:~:text=Pandas'%20focus%20on%20poop%20goes,bacteria%20in%20their%20intestines%20yet.">Panda Facts 2</a>
+        </div>
+    </div>
+</body>
+</html>
