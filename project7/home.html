@@ -1,40 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Home Page</title>
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
-        <style>
-            #header {
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE Animal Rating Blog</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FADDE1;
+            color: #590d22;
             font-family: "Delius Swash Caps", serif;
             font-weight: 400;
             font-style: normal;
-            }
-        </style>
-    </head>
-    <body>
-        <nav>  
-            <a href="home.html">Home</a>
-            <a href="cute.html">Cute</a>
-            <a href="scary.html">Scary</a>
-        </nav>
-        <h1 id="header">THE Animal Rating Blog</h1>
-        <h2>Cute</h2>
-        <p>Look at these cute aniamls!</p>
-        <button onclick="document.location='cute.html'">Click Me :D</button>
-        <img src="cat.png" class= "cat" alt="cat">
-        <a href="https://www.pexels.com/photo/close-up-of-a-kitten-sleeping-in-a-basket-24038436/">picture source</a>
-       
-        <h2>Scary</h2>
-        <p>Check out these scary animals!</p>
-        <button onclick="document.location='scary.html'">Click Me :D</button>
-        <img src="croc.png" class= "croc" alt="crocodile">
-        <a href="https://www.pexels.com/photo/close-up-of-crocodile-16926024/">picture source</a>
+        }
 
-        <hr>
+        nav {
+            background-color: #ffcad4;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: #590d22;
+            font-weight: bold;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #c9184a;
+        }
+
+        h1 {
+            font-family: "Delius Swash Caps", cursive;
+            text-align: center;
+            margin: 20px 0;
+            color: #590d22;
+            font-size: 2.5rem;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .animal-card {
+            background: #F4ACB7;
+            border: 2px solid #590d22;
+            border-radius: 10px;
+            width: calc(33% - 40px); /* Dynamic sizing for cards */
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .animal-card h2 {
+            margin-top: 0;
+            color: #c9184a;
+        }
+        .animal-card img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            margin: 15px 0;
+            object-fit: cover;
+        }
+        .animal-card button {
+            background-color: #590d22;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .animal-card button:hover {
+            background-color: #c9184a;
+        }
+
+        .about {
+            background-color: #ffcad4;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 80%;
+            border: 1px solid #590d22;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .about h2 {
+            color: #c9184a;
+        }
+
+        @media (max-width: 768px) {
+            .animal-card {
+                width: calc(50% - 40px); /* 2 cards per row for tablets */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .animal-card {
+                width: calc(100% - 40px); /* Full width for small screens */
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="home.html">Home</a>
+            <a href="cute.html">Cute Animals</a>
+            <a href="scary.html">Scary Animals</a>
+        </div>
+    </nav>
+
+    <h1 id="header">THE Animal Rating Blog</h1>
+    <div class="card-container">
+        <div class="animal-card">
+            <h2>Cute</h2>
+            <p>Look at these cute animals!</p>
+            <img src="cat.png" alt="Cute Animal Placeholder">
+            <button onclick="document.location='cute.html'">Click Me To Learn More</button>
+        </div>
+        <div class="animal-card">
+            <h2>Scary</h2>
+            <p>Check out these scary animals!</p>
+            <img src="croc.png" alt="Scary Animal Placeholder">
+            <button onclick="document.location='scary.html'">Click Me To Learn More</button>
+        </div>
+    </div>
+
+    <div class="about">
+        <h2>About</h2>
         <p>
             We all love animals, at least the cute ones. But what designates a cute animal? Is it the face? The fluffiness ratio? 
             How human-esque their behaviors are? Then there are also the animals a good portion of people don’t like, especially the scary ones. 
@@ -42,5 +154,6 @@
             Their scale count? Or their perceived threat to humans? 
             Let's explore some cute and scary animals together. I will, however, be the final judge if a certain animal deserves its respective title.
         </p>
-    </body>
+    </div>
+</body>
 </html>
