@@ -16,7 +16,6 @@
             color: #590d22;
             font-family: "Delius Swash Caps", serif;
             font-weight: 400;
-            font-style: normal;
         }
 
         nav {
@@ -26,12 +25,14 @@
             justify-content: space-between;
             align-items: center;
         }
+
         nav a {
             color: #590d22;
             font-weight: bold;
             margin: 0 15px;
             text-decoration: none;
         }
+
         nav a:hover {
             color: #c9184a;
         }
@@ -58,33 +59,46 @@
             background: #F4ACB7;
             border: 2px solid #590d22;
             border-radius: 10px;
-            width: calc(33% - 40px); /* Dynamic sizing for cards */
+            width: calc(33% - 40px);
             margin: 10px;
             padding: 20px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .animal-card img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            padding: 10px;
+            object-fit: cover;
+            transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+
+        /* Image expands on hover */
+        .animal-card:hover img {
+            transform: scale(1.2);
         }
 
         .animal-card h2 {
             margin-top: 0;
             color: #c9184a;
         }
-        .animal-card img {
-            width: 100%;
-            height: 200px;
-            border-radius: 10px;
-            margin: 15px 0;
-            object-fit: cover;
-        }
+
         .animal-card button {
             background-color: #590d22;
             color: #fff;
-            padding: 10px 15px;
+            padding: 15px 15px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             font-size: 1rem;
+            transition: background-color 0.3s ease;
         }
+
         .animal-card button:hover {
             background-color: #c9184a;
         }
@@ -99,19 +113,20 @@
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
         .about h2 {
             color: #c9184a;
         }
 
         @media (max-width: 768px) {
             .animal-card {
-                width: calc(50% - 40px); /* 2 cards per row for tablets */
+                width: calc(50% - 40px);
             }
         }
 
         @media (max-width: 600px) {
             .animal-card {
-                width: calc(100% - 40px); /* Full width for small screens */
+                width: calc(100% - 40px);
             }
             nav a {
                 display: block;
@@ -122,11 +137,9 @@
 </head>
 <body>
     <nav>
-        <div>
-            <a href="home.html">Home</a>
-            <a href="cute.html">Cute Animals</a>
-            <a href="scary.html">Scary Animals</a>
-        </div>
+        <a href="home.html">Home</a>
+        <a href="cute.html">Cute Animals</a>
+        <a href="scary.html">Scary Animals</a>
     </nav>
 
     <h1 id="header">THE Animal Rating Blog</h1>
